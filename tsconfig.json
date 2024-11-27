@@ -1,16 +1,22 @@
 {
     "compilerOptions": {
-        "target": "ESNext",
+        "allowJs": false,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": false,
+        "isolatedModules": true,
+        "jsx": "react-jsx",
+        "lib": ["DOM", "DOM.Iterable", "ESNext"],
         "module": "ESNext",
         "moduleResolution": "bundler",
-        "resolveJsonModule": true,
         "noEmit": true,
-        "strict": true,
-        "declaration": true,
-        "declarationMap": true,
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
         "sourceMap": true,
-        "jsx": "react-jsx"
+        "strict": true,
+        "target": "ESNext",
+        "useDefineForClassFields": true,
+        "types": ["vite/client"]
     },
-    "include": ["src"],
-    "exclude": ["node_modules"]
+    "exclude": ["node_modules"],
+    "include": ["src"]
 }
